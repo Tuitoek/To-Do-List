@@ -10,3 +10,19 @@ add.addEventListener('click', function (event) {
         form.style.display = "none";
     }
 });
+
+// Eventlistener for capturing submit data
+form.addEventListener("submit", function(event){
+    let task = document.getElementById("do").value;
+    console.log(task);
+
+    // Create an element for posting ordered data
+    let taskLink = document.querySelector(".tasklist li");
+    let li = document.createElement("li");
+    li.textContent = ". " + task;
+
+    taskLink.appendChild(li);
+
+    // Prevent Form from refreshing once submitted
+    event.preventDefault();
+})
