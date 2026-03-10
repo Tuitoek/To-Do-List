@@ -12,7 +12,7 @@ add.addEventListener('click', function (event) {
 });
 
 // Eventlistener for capturing submit data
-form.addEventListener("submit", function(event){
+function addTask(event){
     let task = document.getElementById("do").value;
     console.log(task);
 
@@ -25,4 +25,5 @@ form.addEventListener("submit", function(event){
 
     // Prevent Form from refreshing once submitted
     event.preventDefault();
-})
+};
+
