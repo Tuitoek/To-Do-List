@@ -31,7 +31,7 @@ function addTask(event) {
     // Create a delete button for each task
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.classList.add("border-1", "border-solid", "p-1", "font-mono", "text-sm", "ml-4", "bg-red-500", "text-white", "rounded", "hover:bg-gray-800", "hover:text-white", "transition-colors", "duration-300");
+    deleteBtn.classList.add("border-1", "border-solid", "p-1", "font-mono", "text-sm", "ml-4", "bg-red-500", "font-bold", "text-white", "rounded", "hover:bg-gray-800", "hover:text-white", "transition-colors", "duration-300");
 
     // Add event listener to the delete button
     deleteBtn.addEventListener('click', deleteTask);
@@ -49,13 +49,14 @@ function addTask(event) {
 
 // Eventlistener for deleting the last task
 function deleteTask(event) {
+    event.stopPropagation(); // Prevent the click from toggling the task's completion state
     event.preventDefault();
 
     let listItem = event.target.closest("li");
     let parent = listItem.parentNode;
 
     // Now that 1 LI = 1 Task, this index is accurate
-let index = Array.from(parent.children).indexOf(listItem);
+    let index = Array.from(parent.children).indexOf(listItem);
 
     if (index > -1) {
         tasks.splice(index, 1); // Remove from data
@@ -74,9 +75,10 @@ taskList.addEventListener('click', function (event) {
     if (event.target.tagName === "SPAN" || event.target.tagName === "LI") {
 
         // Find the closest LI to apply the styling to
-        const listItem = event.target.closest("li");
+        let listItem = event.target.closest("li");
 
         listItem.classList.toggle("line-through");
+        listItem.classList.toggle("opacity-80");
         listItem.classList.toggle("text-gray-500");
     }
 });
