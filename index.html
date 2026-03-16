@@ -9,7 +9,7 @@
     <title>To Do List</title>
 </head>
 
-<body class="bg-amber-300">
+<body class="bg-amber-300 flex justify-center">
     <div class="w-xl h-auto bg-white mt-15 ml-15">
         <div class="flex justify-center pt-10">
             <div class=" flex justify-between ">
@@ -19,16 +19,17 @@
 
 
         </div>
-        <div class="flex justify-center font-mono text-xl ">
+        <div class="flex justify-center font-mono text-xl">
             <ul class="tasklist">
-                <li></li>
+                <li> <span class="flex flex-col"> </span></li>
             </ul>
         </div>
         <div id="form" style="display:none;">
             <form action="post">
                 <input id="do" type="text" name="do" class="border-1 border-dashed font-mono m-4 p-5"
                     placeholder="What do you wanna do?">
-                <button id="submit" class="border-2 border-solid m-2 p-2 font-mono text-xl" onclick="addTask(event)">Add +</button>
+                <button id="submit" class="border-2 border-solid m-2 p-2 font-mono text-xl" onclick="addTask(event)">Add
+                    +</button>
                 <button type="reset" class="border-2 border-solid m-2 p-2 font-mono text-xl">Clear x</button>
             </form>
         </div>
