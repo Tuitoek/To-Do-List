@@ -35,10 +35,7 @@ function addTask(event) {
     // Add event listener to the delete button
     deleteBtn.addEventListener('click', deleteTask);
 
-    // Numbering the tasks
-    let taskNumber = tasks.length;
-
-    li.textContent = taskNumber + ". " + " " + newTask;
+    li.textContent = "." + " " + newTask;
 
     //Append the new task to the list and the delete button to the task
     li.appendChild(deleteBtn);
