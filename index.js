@@ -40,7 +40,7 @@ function addTask(event) {
     //Append the new task to the list and the delete button to the task
     li.appendChild(deleteBtn);
     taskLink.appendChild(li);
-    
+
 
     // Prevent Form from refreshing once submitted
     event.preventDefault();
@@ -50,11 +50,11 @@ function addTask(event) {
 function deleteTask(event) {
     event.preventDefault();
 
-    const listItem = event.target.closest("li");
-    const parent = listItem.parentNode;
+    let listItem = event.target.closest("li");
+    let parent = listItem.parentNode;
 
     // Now that 1 LI = 1 Task, this index is accurate
-    const index = Array.from(parent.children).indexOf(listItem);
+let index = Array.from(parent.children).indexOf(listItem);
 
     if (index > -1) {
         tasks.splice(index, 1); // Remove from data
@@ -65,9 +65,17 @@ function deleteTask(event) {
 
 }
 
-taskLink.addEventListener('click', function (event) {
-    if (event.target.tagName === "LI") {
-        event.target.classList.toggle("line-through");
-        event.target.classList.toggle("text-gray-500");
+//rget the UL (the parent of all tasks)
+let taskList = document.querySelector("#tasklist ul");
+
+taskList.addEventListener('click', function (event) {
+    //If the user clicked the text (the span) or the list item itself
+    if (event.target.tagName === "SPAN" || event.target.tagName === "LI") {
+
+        // Find the closest LI to apply the styling to
+        const listItem = event.target.closest("li");
+
+        listItem.classList.toggle("line-through");
+        listItem.classList.toggle("text-gray-500");
     }
 });
