@@ -18,7 +18,9 @@ add.addEventListener('click', function (event) {
 // Eventlistener for capturing submit data
 function addTask(event) {
     let newTask = document.getElementById("do").value;
-    if (!newTask) return; // Prevent adding empty tasks
+    if(newTask.trim() === "") { 
+        alert("Please enter a task."); 
+    } else {
 
     tasks.push(newTask);
     console.log(newTask);
@@ -41,7 +43,7 @@ function addTask(event) {
     //Append the new task to the list and the delete button to the task
     li.appendChild(deleteBtn);
     taskLink.appendChild(li);
-
+    }
 
     // Prevent Form from refreshing once submitted
     event.preventDefault();
