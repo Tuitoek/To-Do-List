@@ -26,11 +26,12 @@ function addTask(event) {
     // Create an element for posting ordered data
     let taskLink = document.querySelector("#tasklist ul");
     let li = document.createElement("li");
+    li.classList.add("flex", "items-center", "justify-between", "w-full", "p-2", "border-b-2", "border-gray-300", "hover:bg-yellow-400", "transition-colors", "duration-300");
 
     // Create a delete button for each task
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.classList.add("border-1", "border-solid", "p-1", "font-mono", "text-sm", "ml-4", "bg-red-500", "text-white", "rounded", "hover:bg-yellow-700");
+    deleteBtn.classList.add("border-1", "border-solid", "p-1", "font-mono", "text-sm", "ml-4", "bg-red-500", "text-white", "rounded", "hover:bg-gray-800", "hover:text-white", "transition-colors", "duration-300");
 
     // Add event listener to the delete button
     deleteBtn.addEventListener('click', deleteTask);
