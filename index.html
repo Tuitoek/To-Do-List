@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <link rel="stylesheet" href="index.css"> -->
+
     <title>To Do List</title>
 </head>
 
 <body class="bg-amber-100 flex  justify-center">
+    <!-- Div for the whole task carrd -->
     <div class="w-md h-auto bg-amber-200 mt-15 ml-15 shadow-lg rounded-xl">
+        <!-- Div for the header -->
         <div class="flex justify-center pt-10">
             <div class=" flex justify-between ">
                 <h3 class="font-mono text-2xl p-8">To Do List</h3>
                 <p id="add" class="font-mono text-xl p-8">+</p>
             </div>
-
-
         </div>
+        <!-- Div for the task list -->
         <div id="tasklist" class="flex justify-center font-mono text-xl p-5 max-w-md mx-auto">
             <ul>
                 <li> <span class=""> </span></li>
             </ul>
         </div>
+        <!-- Div for the form -->
         <div id="form" class="hidden p-4 bg-gray-50 border-b border-gray-200" style="display:none;">
             <form action="post">
+                <!-- Div for form inputs & buttons -->
                 <div class="flex flex-col gap-3">
+                    <!-- Input for adding new tasks -->
                     <input id="do" type="text" name="do"
                         class="w-full p-4 rounded-md border-1 border-black focus:border-black focus:outline-none text-lg"
                         placeholder="What do you wanna do?">
+                        <!-- Button for submitting the form -->
                     <button id="submit"
                         class="w-full p-4 bg-violet-600 text-white font-bold rounded-xl shadow-lg active:bg-gray-900"
                         onclick="addTask(event)">Add
                         +</button>
+                        <!-- Button for clearing the form -->
                     <button type="reset"
                         class="w-full p-4 text-stone-950 font-bold rounded-xl shadow-lg border-amber-600 border-2 active:bg-gray-900"">Clear
                         X</button>
