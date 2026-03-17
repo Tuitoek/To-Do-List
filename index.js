@@ -42,7 +42,7 @@ function addTask(event) {
         // Create a delete button for each task
         let deleteBtn = document.createElement("button");
         deleteBtn.appendChild(deleteIcon);
-        deleteBtn.classList.add("font-semibold", "text-rose-900", "hover:text-rose-700", "transition-colors", "duration-300", "ml-5");
+        deleteBtn.classList.add("font-semibold", "text-red-500", "hover:text-rose-700", "transition-colors", "duration-300", "ml-5");
 
         // Add event listener to the delete button
         deleteBtn.addEventListener('click', deleteTask);
