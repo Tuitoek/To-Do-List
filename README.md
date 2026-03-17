@@ -1,19 +1,19 @@
 # **To Do List**
 *To-Do List* designed for clarity and focus. Built with Amber & Emerald aesthetic to make productivity feel less like a chore and more like a win.
 
-## _Home Page_
-/media/Home page.png
+### _Home Page_
+![Screenshot of home page](/media/Home page.png)
 
-## _Add First Task_
+### _Add First Task_
 /media/Add first task.png
 
-## _Clear Task from Input_
+### _Clear Task from Input_
 /media/Clear Task from Input.png
 
-## _Add Two More Tasks_
+### _Add Two More Tasks_
 /media/Added two more tasks.png
 
-## _Delete the Last Task_
+### _Delete the Last Task_
 /media/Delete the last task.png
 
 ## Features
