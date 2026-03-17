@@ -1,80 +1,75 @@
-📝 To Do List
-A sleek, high-contrast To-Do List designed for clarity and focus. Built with a vibrant Amber & Emerald aesthetic to make productivity feel less like a chore and more like a win.
+# **To Do List**
+*To-Do List* designed for clarity and focus. Built with Amber & Emerald aesthetic to make productivity feel less like a chore and more like a win.
 
-Home Page
-![Alt Text](media\Home page.png)
+## _Home Page_
+/media/Home page.png
 
-Add First Task
-![Alt Text](media\Add first task.png)
+## _Add First Task_
+/media/Add first task.png
 
-Clear Task from Input 
-![Alt Text](media\Clear Task from Input.png)
+## _Clear Task from Input_
+/media/Clear Task from Input.png
 
-Add Two More Tasks 
-![Alt Text](media\Added two more tasks.png)
+## _Add Two More Tasks_
+/media/Added two more tasks.png
 
-Delete the Last Task
-![Alt Text](media\Delete the last task.png)
+## _Delete the Last Task_
+/media/Delete the last task.png
 
-✨ Features
-High-Contrast UX: Optimized Amber-600 cards for maximum readability.
+## Features
+> High-Contrast UX: Optimized Amber-600 cards for maximum readability.
 
-Intuitive Actions: Quick-action buttons for adding and clearing tasks with clear color-coded feedback.
+> Intuitive Actions: Quick-action buttons for adding and clearing tasks with clear color-coded feedback.
 
-Responsive Design: Works beautifully on desktop, tablet, and mobile.
+> Responsive Design: Works beautifully on desktop and mobile.
 
-Persistent State: Your tasks stay right where you left them (via LocalStorage/Database).
 
-🎨 Design Palette
-This project uses a custom-curated color palette designed for visual warmth and accessibility:
+## Design Palette
+_This project uses a warm and happy color palette designed for visual warmth and accessibility:_
 
-Background: Amber-200 (Soft & Inviting)
+> Background: Amber-200 (Soft & Inviting)
 
-Cards: Amber-600 (Bold & Structured)
+> Cards: Amber-600 (Bold & Structured)
 
-Primary Action: Emerald-600 (Success & Growth)
+> Primary Action: Emerald-600 (Success & Growth)
 
-Secondary Action: Rose-600 (Clear & Destructive)
+> Secondary Action: Rose-600 (Clear & Destructive)
 
-🚀 Getting Started
-Prerequisites
-Node.js (v18.0 or higher)
+## Getting Started
+> Installation
+_Clone the repo_
 
-npm or yarn
+## Bash
+> git clone https://github.com/Tuitoek/To-Do-List
 
-Installation
-Clone the repo
+## Install dependencies
 
-Bash
-git clone https://github.com/Tuitoek/To-Do-List
-Install dependencies
+### Bash
++ _npm install_
++ _Run the development server_
 
-Bash
-npm install
-Run the development server
+### Bash
+_npm run dev_
 
-Bash
-npm run dev
-🛠️ Tech Stack
-Frontend: [React / Vite / Vanilla JS]
+## Tech Stack
+> + Frontend: [React / Vite / Vanilla JS]
 
-Styling: [Tailwind CSS / CSS Modules]
+> + Styling: [Tailwind CSS / CSS Modules]
 
-Deployment: GitHub Pages
+## Deployment: *GitHub Pages*
 
-📖 Deployment
-This project is live! You can view it here:
-https://tuitoek.github.io/To-Do-List/
+> Deployment
+> _This project is live! You can view it here[(https://tuitoek.github.io/To-Do-List/)]:_
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page].
+## Contributing
+_Contributions, issues, and feature requests are welcome! Feel free to check the [issues page]._
 
-Fork the Project
++ Fork the Project
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
++ Create your Feature Branch (git checkout -b feature/AmazingFeature)
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
++ Commit your Changes (git commit -m 'Add some AmazingFeature')
 
-Push to the Branch (git push origin feature/AmazingFeature)
++ Push to the Branch (git push origin feature/AmazingFeature)
 
-Open a Pull Request
++ Open a Pull Request
