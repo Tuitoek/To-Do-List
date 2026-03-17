@@ -2,19 +2,19 @@
 A sleek, high-contrast To-Do List designed for clarity and focus. Built with a vibrant Amber & Emerald aesthetic to make productivity feel less like a chore and more like a win.
 
 Home Page
-![App Screenshot](media\Home page.png)
+![Alt Text](media\Home page.png)
 
 Add First Task
-![App Screenshot](media\Add first task.png)
+![Alt Text](media\Add first task.png)
 
 Clear Task from Input 
-![App Screenshot](media\Clear Task from Input.png)
+![Alt Text](media\Clear Task from Input.png)
 
 Add Two More Tasks 
-![App Screenshot](media\Added two more tasks.png)
+![Alt Text](media\Added two more tasks.png)
 
 Delete the Last Task
-![App Screenshot](media\Delete the last task.png)
+![Alt Text](media\Delete the last task.png)
 
 ✨ Features
 High-Contrast UX: Optimized Amber-600 cards for maximum readability.
